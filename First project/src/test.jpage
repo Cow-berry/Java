@@ -1,0 +1,6 @@
+int i = 10;
+i--; 
+
+System.out.println("My score is "+i);
+
+
