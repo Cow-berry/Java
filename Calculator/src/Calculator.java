@@ -81,6 +81,8 @@ public class Calculator {
 		buttonDivide.addActionListener(calcEngine);
 		buttonEqual.addActionListener(calcEngine);
 		clear.addActionListener(calcEngine);
+		
+		
 	}
 
 	public static void main (String[] args) {

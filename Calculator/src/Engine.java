@@ -22,8 +22,11 @@ public class Engine implements ActionListener {
 		
 		double displayValue = 0;
 		if(!"".equals(dispFieldText)){
-			
+			try{
 			displayValue = Double.parseDouble(dispFieldText);
+			} catch(NumberFormatException el){
+				javax.swing.JOptionPane.showConfirmDialog(null, "Пожалуйста, введите число!", "Неправильный ввод", javax.swing.JOptionPane.PLAIN_MESSAGE);
+			}
 		}
 		
 		Object src = e.getSource();
