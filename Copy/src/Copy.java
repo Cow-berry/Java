@@ -62,7 +62,7 @@ public class Copy {
 	public static void main(String[] args) throws IOException {
 	
 		if (args.length == 2){
-			copy("/home/pikatolik/Документы/Java/texts/text.txt", "/home/pikatolik/Документы/Java/texts/text1.txt");
+			copy("../texts/text.txt", "../Java/texts/text1.txt");
 		}
 		String current = new java.io.File( "." ).getCanonicalPath();
 	    System.out.println("Current dir:"+current);
